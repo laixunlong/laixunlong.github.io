@@ -232,7 +232,7 @@
 			</div>
 			<div id="ospf" style="width: 100%;display:none;">
 				<div id="ospf1" style="width:100% ;font-size:26px;text-align: left;">
-					ospf(手写路由表)
+					ospf(路由协议)
 					<pre>
 	<strong>R1上:</strong>
 	>system-view
@@ -270,11 +270,11 @@
 				进入ospf协议模式
 	>area 1
 				进入进程1
-	>network 192.14.1.1 0.0.0.3 
+	>network 192.14.1.0 0.0.0.3 
 				设置路由器处于的网段.前为起始地址,
 				后为主机数,0.0.0.3表示有4个可分配
 				ip(只设置直连网段.)
-	>network 10.10.1.1 0.0.0.3
+	>network 10.10.1.0 0.0.0.3
 				LoopBack接口也要设置网段
 	<strong>R2上:</strong>
 	>quit
