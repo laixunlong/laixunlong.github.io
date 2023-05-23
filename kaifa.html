@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			#king input
+			{
+				width: 200px;
+				height: 30px;
+				margin-top: 1px;
+				font-size: 16px;
+			}
+			#guaxian
+			{
+				display: none;
+				margin-left: 40px;
+			}
+			#peizhi p
+			{
+				margin: 2px;
+			}
+			#run 
+			{
+				margin-left: 40px;
+			}
+			#run p
+			{
+				margin: 2px;
+			}
+			#Src
+			{
+				margin-left: 40px;
+			}
+		</style>
+		<script type="text/javascript">
+			function guaxian()
+			{
+				var guaxian=document.getElementById("guaxian");
+				if(guaxian.style.display=="block")
+				{guaxian.style.display="none"}
+				else
+				{guaxian.style.display="block"}
+			}
+			function run()
+			{
+				var run=document.getElementById("run");
+				if(run.style.display=="block")
+				{run.style.display="none"}
+				else
+				{run.style.display="block"}
+			}
+			function Src()
+			{
+				var Src=document.getElementById("Src");
+				if(Src.style.display=="block")
+				{Src.style.display="none"}
+				else
+				{Src.style.display="block"}
+			}
+			function Main()
+			{
+				var Main=document.getElementById("Main");
+				if(Main.style.display=="block")
+				{Main.style.display="none"}
+				else
+				{Main.style.display="block"}
+			}
+			function Java()
+			{
+				var Java=document.getElementById("Java");
+				if(Java.style.display=="block")
+				{Java.style.display="none"}
+				else
+				{Java.style.display="block"}
+			}
+			function net()
+			{
+				var net=document.getElementById("net");
+				if(net.style.display=="block")
+				{net.style.display="none"}
+				else
+				{net.style.display="block"}
+			}
+			function mmkj()
+			{
+				var mmkj=document.getElementById("mmkj");
+				if(mmkj.style.display=="block")
+				{mmkj.style.display="none"}
+				else
+				{mmkj.style.display="block"}
+			}
+			function Resources()
+			{
+				var Resources=document.getElementById("Resources");
+				if(Resources.style.display=="block")
+				{Resources.style.display="none"}
+				else
+				{Resources.style.display="block"}
+			}
+			function assets()
+			{
+				var assets=document.getElementById("assets");
+				if(assets.style.display=="block")
+				{assets.style.display="none"}
+				else
+				{assets.style.display="block"}
+			}
+			function a_mmkj()
+			{
+				var a_mmkj=document.getElementById("a_mmkj");
+				if(a_mmkj.style.display=="block")
+				{a_mmkj.style.display="none"}
+				else
+				{a_mmkj.style.display="block"}
+			}
+			function Data()
+			{
+				var Data=document.getElementById("Data");
+				if(Data.style.display=="block")
+				{Data.style.display="none"}
+				else
+				{Data.style.display="block"}
+			}
+			function d_mmkj()
+			{
+				var d_mmkj=document.getElementById("d_mmkj");
+				if(d_mmkj.style.display=="block")
+				{d_mmkj.style.display="none"}
+				else
+				{d_mmkj.style.display="block"}
+			}
+			function structures()
+			{
+				var structures=document.getElementById("structures");
+				if(structures.style.display=="block")
+				{structures.style.display="none"}
+				else
+				{structures.style.display="block"}
+			}
+			function chengqiang_1()
+			{
+				var chengqiang_1=document.getElementById("chengqiang_1");
+				if(chengqiang_1.style.display=="block")
+				{chengqiang_1.style.display="none"}
+				else
+				{chengqiang_1.style.display="block"}
+			}
+			function worldgen()
+			{
+				var worldgen=document.getElementById("worldgen");
+				if(worldgen.style.display=="block")
+				{worldgen.style.display="none"}
+				else
+				{worldgen.style.display="block"}
+			}
+			function recipes()
+			{
+				var recipes=document.getElementById("recipes");
+				if(recipes.style.display=="block")
+				{recipes.style.display="none"}
+				else
+				{recipes.style.display="block"}
+			}
+			function template_pool()
+			{
+				var template_pool=document.getElementById("template_pool");
+				if(template_pool.style.display=="block")
+				{template_pool.style.display="none"}
+				else
+				{template_pool.style.display="block"}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="king">
+			<input type="button" value="工程文件名" onclick="guaxian()" style="border-color: blue;"/>
+			<div id="guaxian">
+				<input type="button" value=".gradle" onclick="" style=""/><br/>
+				<input type="button" value=".idea" onclick="" style=""/><br/>
+				<input type="button" value="build" onclick="" style=""/><br/>
+				<input type="button" value="gradle" onclick="" style=""/><br/>
+				<input type="button" value="out" onclick="" style=""/><br/>
+				<input type="button" value="run" onclick="run()" style="border-color: blue;"/><br/>
+				<div id="run" style="display: none;">
+					<input type="button" value="config" onclick="" style=""/><br/>
+					<input type="button" value="crash-reports" onclick="" style=""/><br/>
+					<input type="button" value="cdfaultconfigs" onclick="" style=""/><br/>
+					<input type="button" value="logs" onclick="" style=""/><br/>
+					<input type="button" value="mods" onclick="" style=""/><br/>
+					<input type="button" value="resourcepacks" onclick="" style=""/><br/>
+					<input type="button" value="saves" onclick="" style="border-color: blue;"/><br/>
+					<p>options.txt</p>
+					<p>usercache.json</p>
+					<p>usernamecache.json</p>
+				</div>
+				<input type="button" value="src" onclick="Src()" style="border-color: blue;"/><br/>
+				<div id="Src" style="display: none;">
+					<input type="button" value="generated[main]" onclick="" style=""/>项目结构文件<br/>
+					<input type="button" value="main" onclick="Main()" style="border-color: blue;"/><br/>
+					<div id="Main" style="display: none;margin-left: 40px;">
+						<input type="button" value="java" onclick="Java()" style="border-color: blue;"/><br/>
+						<div id="Java" style="display: none;margin-left: 40px;">
+							<input type="button" value="net" onclick="net()" style="border-color: blue;"/><br/>
+							<div id="net" style="display: none;margin-left: 40px;">
+								<input type="button" value="命名空间" onclick="mmkj()" style="border-color: blue;"/><br/>
+								<div id="mmkj" style="display: none;margin-left: 40px;">
+									<input type="button" value="block" onclick="" style="border-color: blue;"/><br/>
+									<input type="button" value="entity" onclick="" style="border-color: blue;"/><br/>
+									<input type="button" value="init" onclick="" style="border-color: blue;"/><br/>
+									<input type="button" value="item" onclick="" style="border-color: blue;"/><br/>
+									<input type="button" value="world" onclick="" style="border-color: blue;"/><br/>
+									<input type="button" value="Main.class" onclick="" style="border-color:#ffffff;background-color: #ffffff;"/><br/>
+								</div>
+							</div>
+						</div>
+						<input type="button" value="resources" onclick="Resources()" style="border-color: blue;"/><br/>
+						<div id="Resources" style="display: none;margin-left: 40px;">
+							<input type="button" value="assets" onclick="assets()" style="border-color: blue;"/><br/>
+							<div id="assets" style="display: none;margin-left: 40px;">
+								<input type="button" value="命名空间" onclick="a_mmkj()" style="border-color: blue;"/><br/>
+								<div id="a_mmkj" style="display: none;margin-left: 40px;">
+									<input type="button" value="blockstates" onclick="blockstates()" style="border-color: blue;"/><br/>
+									<input type="button" value="lang" onclick="lang()" style="border-color: blue;"/><br/>
+									<input type="button" value="models" onclick="models()" style="border-color: blue;"/><br/>
+									<input type="button" value="textures" onclick="textures()" style="border-color: blue;"/><br/>
+								</div>
+							</div>
+							<input type="button" value="Data" onclick="Data()" style="border-color: blue;"/><br/>
+							<div id="Data" style="display: none;margin-left: 40px;">
+								<input type="button" value="命名空间" onclick="d_mmkj()" style="border-color: blue;"/><br/>
+								<div id="d_mmkj" style="display: none;margin-left: 40px;">
+									<input type="button" value="recipes" onclick="recipes()" style="border-color: blue;"/>配方储存文件<br/>
+									<div id="recipes" style="display: none;margin-left: 40px;">
+										<a href="peifang_fumojinpingguo.html" target="_blank">peifang_fumojinpingguo.json</a>
+									</div>
+									<input type="button" value="structures" onclick="structures()" style="border-color: blue;"/>结构库<br/>
+									<div id="structures" style="display: none;margin-left: 40px;">
+										<input type="button" value="chengqiang_1" onclick="chengqiang_1()" style="border-color: blue;"/>分类文件<br/>
+										<div id="chengqiang_1" style="display: none;margin-left: 40px;">
+											<a >chengqiang_1.nbt</a><br/>
+											<a >chengqiang_2.nbt</a>
+										</div>
+									</div>
+									<input type="button" value="worldgen" onclick="worldgen()" style="border-color: blue;"/>世界根/拼图池<br/>
+									<div id="worldgen" style="display: none;margin-left: 40px;">
+										<input type="button" value="template_pool" onclick="template_pool()" style="border-color: blue;"/>模板池<br/>
+										<div id="template_pool" style="display: none;margin-left: 40px;">
+											<a href="chengqiang_shengcheng.json.html" target="_blank">chengqiang_shengcheng.json</a>
+										</div>
+									</div>
+								</div>
+								<input type="button" value="minecraft" onclick="minecraft()" style="border-color: blue;"/><br/>
+							</div>
+							<input type="button" value="META_INF" onclick="META_INF()" style="border-color: blue;"/><br/>
+							<input type="button" value="pack.mcmeta" onclick="pack()" style="border-color:#ffffff;background-color: #ffffff;"/><br/>
+							<p style="margin: 2px;">logo.png</p>
+						</div>
+					</div>
+					<input type="button" value="test" onclick="" style=""/>项目结构文件<br/>
+				</div>
+				<div id="peizhi">
+				<p>.gitattributes</p>
+				<p>.gitignore</p>
+				<p>build.gradle</p>
+				<p>changelog.txt</p>
+				<p>CREDITS.txt</p>
+				<p>gradle.properties</p>
+				<p>gradlew</p>
+				<p>gradlew.bat</p>
+				<p>LICENSE.txt</p>
+				<p>README.txt</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
