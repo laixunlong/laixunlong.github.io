@@ -1,0 +1,76 @@
+body
+{
+    margin:0px;
+}
+#main
+{
+    width:100%;
+    height:100vh;
+    background-color:#ffffff;
+    display:block;
+    
+}
+#A1
+{
+	
+	width: 360px;
+	height: 360px;
+	background-color:#ff55ff;
+	position:fixed;
+	left:70px;
+	top:-360px;
+	background: url("https://img.3dmgame.com/uploads/allimg/170510/316-1F510151000.png") no-repeat;
+	background-size: 170% 100%;
+}
+#A2
+{
+	
+	width: 360px;
+	height: 360px;
+	background-color:#55aaff;
+	box-shadow: 0px 0px 0px 0px #acacac;/*参数依次为左距离,上距离,模糊宽度,实线宽度,颜色*/
+	position:fixed;
+	left:470px;
+	top:-360px;
+	background: url("https://wallpaperm.cmcm.com/3d0b45f00b8f86e99743291f18cfd5c5.jpg") no-repeat;
+	background-size: 170% 100%;
+}
+#A3
+{
+	
+	width: 360px;
+	height: 360px;
+	background-color:#ffaaff;
+	position:fixed;
+	left:870px;
+	top:-360px;
+	background: url("https://wallpaperm.cmcm.com/182ceb54d84374469e5ea079a4f0befc.jpg") no-repeat;
+	background-size: 200% 100%;
+}
+#B1
+{
+	color: #ff0000;
+	font-size:60px;
+	font-family: 华文楷体;
+	padding-top: 130px;
+	padding-left: 50px;
+}   
+#B2 
+{   
+	color: #87e9ff;
+	font-size:60px;
+	font-family: 华文楷体;
+	padding-top: 130px;
+	padding-left: 50px;
+}   
+#B3 
+{   
+	color: #c6c6c6;
+	font-size:60px;
+	font-family: 华文楷体;
+	padding-top: 130px;
+	padding-left: 50px;
+}
+#A1 a{text-decoration:none;}
+#A2 a{text-decoration:none;}
+#A3 a{text-decoration:none;}
