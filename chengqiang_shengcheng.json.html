@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="king" style="font-size: 15px;">
+			<style type="text/css">
+				#king b
+				{
+					color: #00e30f;
+				}
+			</style>
+			<pre>
+	{
+	  "name": "guaxian:enchanting_room",<b>//name表示要调用的文件位置,一般设置为自身的地址</b>
+	  "fallback": "minecraft:empty",<b>//fallback表示当结构之间的生成互相冲突,用其他结构代替.即这个房子生成在另一个房子里时,就会失败
+									一般设置为empty,表示不做处理,互相嵌套的结构也是一种特性.</b>
+	  "elements": [		<b>//当前模板池中会生成的东西,都写在elements集合中,记住,是中括号[],不是大括号.</b>
+<b>--------------------------------------------------------------------------------------</b>
+	    {	<b>//大括号内的每一个对象,都是一个可能生产的结构.</b>
+			"weight": 1,	<b>//weight表示权重,为:所有权重之和\权重值.</b>
+			"element":	<b>//element设置生成的东西</b>
+				{
+				"location": "guaxian:enchanting_room/chengqiang_1",  <b>//location设置结构的位置,格式为:
+											命名空间:分类文件/文件名.npt</b>
+				"processors": "minecraft:empty",	<b>//修饰方块,一般用来随即把原石替换成苔石,使其看起来更古老,此处表示不修饰</b>
+				"projection": "terrain_matching",	<b>//生成调整,rigid表示不调整,terrain_matching表示紧贴地面</b>
+				"element_type": "minecraft:single_pool_element"	<b>//生成模式,single_pool_element表示生成空气,会把的其他方块替换为空气
+										legacy_single_pool_element表示不生成空气,空余位置会被其他方块填充.</b>
+				}
+	    }
+<b>--------------------------------------------------------------------------------------</b>
+	    {		<b>//注意:通过模板池生成的结构只能是单个结构文件,想要生成大型建筑,还需要把模板池扩建成拼图池,
+				而多个模板池相互串联,才能实现大型建筑.</b>
+			  "weight": 2
+			  "element":
+			  {
+							"location": "guaxian:enchanting_room/chengqiang_2",
+							"processors": "minecraft:empty",
+							"projection": ,
+							"element_type": "minecraft:single_pool_element"
+			  }
+	    }
+<b>--------------------------------------------------------------------------------------</b>
+	  ]		
+	}
+			</pre>
+		</div>
+	</body>
+</html>
