@@ -62,7 +62,7 @@ body{margin: 0px;}
 		height: 15vh;
 		line-height:15vh;
 		text-align: center;
-		font-size: 40px;
+		font-size:40px;
 		font-family:华文楷体;
 		font-weight: bold;
 		color: #a0ffa6;
@@ -80,7 +80,7 @@ body{margin: 0px;}
 		height: 15vh;
 		line-height:15vh;
 		text-align: center;
-		font-size: 40px;
+		font-size:40px;
 		font-family:华文楷体;
 		font-weight: bold;
 		color: #ff7777;
@@ -92,4 +92,44 @@ body{margin: 0px;}
 		left:100%;
 		top:72vh;
 		box-shadow:1px 1px 0px 0px #ffffff;
+	}
+	#youzhi_2{
+		background:radial-gradient(#FFFFFF,#2edd33);
+		overflow:auto;
+		width:70%;
+		height:75vh;
+		padding: 5%;
+		position:fixed;
+		left:100%;
+		top:10vh;
+	}
+	#yanxun_2{
+		background:radial-gradient(#FFFFFF,#2edd33);
+		overflow:auto;
+		width:70%;
+		height:75vh;
+		padding: 5%;
+		position:fixed;
+		left:100%;
+		top:10vh;
+	}
+	#tiaowei_2{
+		background:radial-gradient(#FFFFFF,#2edd33);
+		overflow:auto;
+		width:70%;
+		height:75vh;
+		padding: 5%;
+		position:fixed;
+		left:100%;
+		top:10vh;
+	}
+	#jiulei_2{
+		background:radial-gradient(#FFFFFF,#2edd33);
+		overflow:auto;
+		width:70%;
+		height:75vh;
+		padding: 5%;
+		position:fixed;
+		left:100%;
+		top:10vh;
 	}
