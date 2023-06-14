@@ -51,12 +51,53 @@ setTimeout(function()
 			d.style.width=70-zuoyi*1.9+"%";
 			zuoyi=zuoyi+1;
 		}
-		if(youzhi_tanchuang==1)
+		if(youzhi_tanchuang>0&&youzhi_tanchuang<=40)
 		{
 			var a=document.getElementById("youzhi_2");
 			var b=document.getElementById("yanxun_2");
 			var c=document.getElementById("tiaowei_2");
 			var d=document.getElementById("jiulei_2");
+			a.style.left=100-(2.075*youzhi_tanchuang)+"%";
+			b.style.left=100+"%";
+			c.style.left=100+"%";
+			d.style.left=100+"%";
+			youzhi_tanchuang=youzhi_tanchuang+1;
+		}
+		else if(yanxun_tanchuang>=0&&yanxun_tanchuang<40)
+		{
+			var a=document.getElementById("youzhi_2");
+			var b=document.getElementById("yanxun_2");
+			var c=document.getElementById("tiaowei_2");
+			var d=document.getElementById("jiulei_2");
+			a.style.left=100+"%";
+			b.style.left=100-(2.075*yanxun_tanchuang)+"%";
+			c.style.left=100+"%";
+			d.style.left=100+"%";
+			yanxun_tanchuang=yanxun_tanchuang+1;
+		}
+		else if(tiaowei_tanchuang>=0&&tiaowei_tanchuang<40)
+		{
+			var a=document.getElementById("youzhi_2");
+			var b=document.getElementById("yanxun_2");
+			var c=document.getElementById("tiaowei_2");
+			var d=document.getElementById("jiulei_2");
+			a.style.left=100+"%";
+			b.style.left=100+"%";
+			c.style.left=100-(2.075*tiaowei_tanchuang)+"%";
+			d.style.left=100+"%";
+			tiaowei_tanchuang=tiaowei_tanchuang+1;
+		}
+		else if(jiulei_tanchuang>=0&&jiulei_tanchuang<40)
+		{
+			var a=document.getElementById("youzhi_2");
+			var b=document.getElementById("yanxun_2");
+			var c=document.getElementById("tiaowei_2");
+			var d=document.getElementById("jiulei_2");
+			a.style.left=100+"%";
+			b.style.left=100+"%";
+			c.style.left=100+"%";
+			d.style.left=100-(2.075*jiulei_tanchuang)+"%";
+			jiulei_tanchuang=jiulei_tanchuang+1;
 		}
 	},10);
 },100);
@@ -71,9 +112,11 @@ function youzhi()
 	b.onclick=function(){yanxun_2();};
 	c.onclick=function(){tiaoewi_2();};
 	d.onclick=function(){jiulei_2();};
+	youzhi_2();
 }
 function youzhi_2()
 {
+	youzhi_tanchuang=1;
 }
 function yanxun()
 {
@@ -86,9 +129,12 @@ function yanxun()
 	b.onclick=function(){yanxun_2();};
 	c.onclick=function(){tiaoewi_2();};
 	d.onclick=function(){jiulei_2();};
+	yanxun_2();
 }
 function yanxun_2()
-{}
+{
+	yanxun_tanchuang=1;
+}
 function tiaowei()
 {
 	zuoyi=1;
@@ -100,9 +146,12 @@ function tiaowei()
 	b.onclick=function(){yanxun_2();};
 	c.onclick=function(){tiaoewi_2();};
 	d.onclick=function(){jiulei_2();};
+	tiaoewi_2();
 }
 function tiaoewi_2()
-{}
+{
+	tiaowei_tanchuang=1;
+}
 function jiulei()
 {
 	zuoyi=1;
@@ -114,6 +163,9 @@ function jiulei()
 	b.onclick=function(){yanxun_2();};
 	c.onclick=function(){tiaoewi_2();};
 	d.onclick=function(){jiulei_2();};
+	jiulei_2();
 }
 function jiulei_2()
-{}
+{
+	jiulei_tanchuang=1;
+}
